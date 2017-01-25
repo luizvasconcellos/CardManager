@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F2BBDBF1D95E48D00CA0C9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2BBDBE1D95E48D00CA0C9F /* main.m */; };
+		2F2BBDC21D95E48D00CA0C9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2BBDC11D95E48D00CA0C9F /* AppDelegate.m */; };
+		2F2BBDC81D95E48D00CA0C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2BBDC61D95E48D00CA0C9F /* Main.storyboard */; };
+		2F2BBDCA1D95E48D00CA0C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F2BBDC91D95E48D00CA0C9F /* Assets.xcassets */; };
+		2F2BBDCD1D95E48D00CA0C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2BBDCB1D95E48D00CA0C9F /* LaunchScreen.storyboard */; };
+		2F2BBDE01D95EFA000CA0C9F /* ICLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2BBDDF1D95EFA000CA0C9F /* ICLoginViewController.m */; };
+		2F2BBDE31D95F93700CA0C9F /* ICRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2BBDE21D95F93700CA0C9F /* ICRegisterViewController.m */; };
+		2F2BBDE91D9605CD00CA0C9F /* UITextFieldLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2BBDE81D9605CD00CA0C9F /* UITextFieldLimit.m */; };
+		2F2BBDEC1D96CAFF00CA0C9F /* ICValidateStringBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2BBDEB1D96CAFF00CA0C9F /* ICValidateStringBO.m */; };
+		2F2BBDEF1D96CF4100CA0C9F /* ICTestNetworkConnectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2BBDEE1D96CF4100CA0C9F /* ICTestNetworkConnectionProvider.m */; };
+		2F9BF3EF1D99A57200748882 /* ICUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BF3EE1D99A57200748882 /* ICUser.m */; };
+		2F9BF3F21D9C384600748882 /* ICHTTPCardManagerAPIProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BF3F11D9C384600748882 /* ICHTTPCardManagerAPIProvider.m */; };
+		2F9BF3FF1D9C3F7800748882 /* ICHTTPCardManagerAPIProvider+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BF3FE1D9C3F7800748882 /* ICHTTPCardManagerAPIProvider+User.m */; };
+		2F9BF4031D9D492D00748882 /* ICLoginBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BF4021D9D492D00748882 /* ICLoginBO.m */; };
+		2F9BF4081D9D88E400748882 /* ICBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BF4071D9D88E300748882 /* ICBaseManager.m */; };
+		2F9BF40B1D9D89CC00748882 /* ICLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BF40A1D9D89CC00748882 /* ICLoginManager.m */; };
+		2F9BF4111D9EF24D00748882 /* UIColor+CardManagerDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BF4101D9EF24D00748882 /* UIColor+CardManagerDefaults.m */; };
+		4B13633CB0DCA9FF9FB45421 /* Pods_CardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE46A2E757515B9F593922A5 /* Pods_CardManager.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F2BBDBA1D95E48D00CA0C9F /* CardManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2BBDBE1D95E48D00CA0C9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F2BBDC01D95E48D00CA0C9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F2BBDC11D95E48D00CA0C9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F2BBDC71D95E48D00CA0C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F2BBDC91D95E48D00CA0C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F2BBDCC1D95E48D00CA0C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F2BBDCE1D95E48D00CA0C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F2BBDDE1D95EFA000CA0C9F /* ICLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICLoginViewController.h; sourceTree = "<group>"; };
+		2F2BBDDF1D95EFA000CA0C9F /* ICLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLoginViewController.m; sourceTree = "<group>"; };
+		2F2BBDE11D95F93700CA0C9F /* ICRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRegisterViewController.h; sourceTree = "<group>"; };
+		2F2BBDE21D95F93700CA0C9F /* ICRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICRegisterViewController.m; sourceTree = "<group>"; };
+		2F2BBDE71D9605CD00CA0C9F /* UITextFieldLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldLimit.h; sourceTree = "<group>"; };
+		2F2BBDE81D9605CD00CA0C9F /* UITextFieldLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldLimit.m; sourceTree = "<group>"; };
+		2F2BBDEA1D96CAFF00CA0C9F /* ICValidateStringBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICValidateStringBO.h; sourceTree = "<group>"; };
+		2F2BBDEB1D96CAFF00CA0C9F /* ICValidateStringBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICValidateStringBO.m; sourceTree = "<group>"; };
+		2F2BBDED1D96CF4100CA0C9F /* ICTestNetworkConnectionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTestNetworkConnectionProvider.h; sourceTree = "<group>"; };
+		2F2BBDEE1D96CF4100CA0C9F /* ICTestNetworkConnectionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICTestNetworkConnectionProvider.m; sourceTree = "<group>"; };
+		2F9BF3ED1D99A57200748882 /* ICUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICUser.h; sourceTree = "<group>"; };
+		2F9BF3EE1D99A57200748882 /* ICUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICUser.m; sourceTree = "<group>"; };
+		2F9BF3F01D9C384600748882 /* ICHTTPCardManagerAPIProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHTTPCardManagerAPIProvider.h; sourceTree = "<group>"; };
+		2F9BF3F11D9C384600748882 /* ICHTTPCardManagerAPIProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHTTPCardManagerAPIProvider.m; sourceTree = "<group>"; };
+		2F9BF3FD1D9C3F7800748882 /* ICHTTPCardManagerAPIProvider+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ICHTTPCardManagerAPIProvider+User.h"; sourceTree = "<group>"; };
+		2F9BF3FE1D9C3F7800748882 /* ICHTTPCardManagerAPIProvider+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ICHTTPCardManagerAPIProvider+User.m"; sourceTree = "<group>"; };
+		2F9BF4011D9D492D00748882 /* ICLoginBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICLoginBO.h; sourceTree = "<group>"; };
+		2F9BF4021D9D492D00748882 /* ICLoginBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLoginBO.m; sourceTree = "<group>"; };
+		2F9BF4061D9D88E300748882 /* ICBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBaseManager.h; sourceTree = "<group>"; };
+		2F9BF4071D9D88E300748882 /* ICBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBaseManager.m; sourceTree = "<group>"; };
+		2F9BF4091D9D89CC00748882 /* ICLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICLoginManager.h; sourceTree = "<group>"; };
+		2F9BF40A1D9D89CC00748882 /* ICLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLoginManager.m; sourceTree = "<group>"; };
+		2F9BF40F1D9EF24D00748882 /* UIColor+CardManagerDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CardManagerDefaults.h"; sourceTree = "<group>"; };
+		2F9BF4101D9EF24D00748882 /* UIColor+CardManagerDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CardManagerDefaults.m"; sourceTree = "<group>"; };
+		49E34C0ACB5E0EFC497F7A97 /* Pods-CardManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardManager/Pods-CardManager.release.xcconfig"; sourceTree = "<group>"; };
+		7AE5B9EC73AE41D8B8AE2A9F /* Pods-CardManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardManager/Pods-CardManager.debug.xcconfig"; sourceTree = "<group>"; };
+		BE46A2E757515B9F593922A5 /* Pods_CardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F2BBDB71D95E48D00CA0C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B13633CB0DCA9FF9FB45421 /* Pods_CardManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F2BBDB11D95E48D00CA0C9F = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDBC1D95E48D00CA0C9F /* CardManager */,
+				2F2BBDBB1D95E48D00CA0C9F /* Products */,
+				6642B8330A1E07E6445536D2 /* Pods */,
+				5A9FC43906ABEBA7FE2EA125 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F2BBDBB1D95E48D00CA0C9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDBA1D95E48D00CA0C9F /* CardManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F2BBDBC1D95E48D00CA0C9F /* CardManager */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDD41D95E4C800CA0C9F /* Ressources */,
+				2F2BBDD71D95E54500CA0C9F /* Source */,
+				2F2BBDBD1D95E48D00CA0C9F /* Supporting Files */,
+			);
+			path = CardManager;
+			sourceTree = "<group>";
+		};
+		2F2BBDBD1D95E48D00CA0C9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDCE1D95E48D00CA0C9F /* Info.plist */,
+				2F2BBDC11D95E48D00CA0C9F /* AppDelegate.m */,
+				2F2BBDC01D95E48D00CA0C9F /* AppDelegate.h */,
+				2F2BBDBE1D95E48D00CA0C9F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F2BBDD41D95E4C800CA0C9F /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDD61D95E4DF00CA0C9F /* Storyboards */,
+				2F2BBDD51D95E4D500CA0C9F /* Assets */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		2F2BBDD51D95E4D500CA0C9F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDC91D95E48D00CA0C9F /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		2F2BBDD61D95E4DF00CA0C9F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDC61D95E48D00CA0C9F /* Main.storyboard */,
+				2F2BBDCB1D95E48D00CA0C9F /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		2F2BBDD71D95E54500CA0C9F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDDA1D95E5F500CA0C9F /* Model */,
+				2F2BBDD81D95E5A600CA0C9F /* View */,
+				2F2BBDD91D95E5E700CA0C9F /* Controller */,
+				2F2BBDDB1D95E5FF00CA0C9F /* Manager */,
+				2F2BBDDC1D95E60F00CA0C9F /* Business */,
+				2F2BBDDD1D95E62000CA0C9F /* Provider */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2F2BBDD81D95E5A600CA0C9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF40C1D9EF10300748882 /* Ressources */,
+				2F9BF3E91D999EB800748882 /* Login */,
+				2F2BBDE71D9605CD00CA0C9F /* UITextFieldLimit.h */,
+				2F2BBDE81D9605CD00CA0C9F /* UITextFieldLimit.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F2BBDD91D95E5E700CA0C9F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF3E81D99957F00748882 /* Register */,
+				2F9BF3E71D99906D00748882 /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2BBDDA1D95E5F500CA0C9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF3EC1D99A53200748882 /* User */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F2BBDDB1D95E5FF00CA0C9F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF4051D9D876100748882 /* Base */,
+				2F9BF4041D9D875A00748882 /* Login */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2F2BBDDC1D95E60F00CA0C9F /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF3EA1D999F3200748882 /* Util */,
+				2F9BF4001D9D486000748882 /* Login */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		2F2BBDDD1D95E62000CA0C9F /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF3F01D9C384600748882 /* ICHTTPCardManagerAPIProvider.h */,
+				2F9BF3F11D9C384600748882 /* ICHTTPCardManagerAPIProvider.m */,
+				2F9BF3F31D9C3D1200748882 /* Login */,
+				2F9BF3EB1D99A00600748882 /* NewtworkConnection */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		2F9BF3E71D99906D00748882 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDDE1D95EFA000CA0C9F /* ICLoginViewController.h */,
+				2F2BBDDF1D95EFA000CA0C9F /* ICLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F9BF3E81D99957F00748882 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDE11D95F93700CA0C9F /* ICRegisterViewController.h */,
+				2F2BBDE21D95F93700CA0C9F /* ICRegisterViewController.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		2F9BF3E91D999EB800748882 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F9BF3EA1D999F3200748882 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDEA1D96CAFF00CA0C9F /* ICValidateStringBO.h */,
+				2F2BBDEB1D96CAFF00CA0C9F /* ICValidateStringBO.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		2F9BF3EB1D99A00600748882 /* NewtworkConnection */ = {
+			isa = PBXGroup;
+			children = (
+				2F2BBDED1D96CF4100CA0C9F /* ICTestNetworkConnectionProvider.h */,
+				2F2BBDEE1D96CF4100CA0C9F /* ICTestNetworkConnectionProvider.m */,
+			);
+			name = NewtworkConnection;
+			path = NetworkConnection;
+			sourceTree = "<group>";
+		};
+		2F9BF3EC1D99A53200748882 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF3ED1D99A57200748882 /* ICUser.h */,
+				2F9BF3EE1D99A57200748882 /* ICUser.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		2F9BF3F31D9C3D1200748882 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF3FD1D9C3F7800748882 /* ICHTTPCardManagerAPIProvider+User.h */,
+				2F9BF3FE1D9C3F7800748882 /* ICHTTPCardManagerAPIProvider+User.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F9BF4001D9D486000748882 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF4011D9D492D00748882 /* ICLoginBO.h */,
+				2F9BF4021D9D492D00748882 /* ICLoginBO.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F9BF4041D9D875A00748882 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF4091D9D89CC00748882 /* ICLoginManager.h */,
+				2F9BF40A1D9D89CC00748882 /* ICLoginManager.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F9BF4051D9D876100748882 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF4061D9D88E300748882 /* ICBaseManager.h */,
+				2F9BF4071D9D88E300748882 /* ICBaseManager.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2F9BF40C1D9EF10300748882 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF40E1D9EF18100748882 /* Fonts */,
+				2F9BF40D1D9EF16D00748882 /* Colors */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		2F9BF40D1D9EF16D00748882 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BF40F1D9EF24D00748882 /* UIColor+CardManagerDefaults.h */,
+				2F9BF4101D9EF24D00748882 /* UIColor+CardManagerDefaults.m */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		2F9BF40E1D9EF18100748882 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5A9FC43906ABEBA7FE2EA125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE46A2E757515B9F593922A5 /* Pods_CardManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6642B8330A1E07E6445536D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AE5B9EC73AE41D8B8AE2A9F /* Pods-CardManager.debug.xcconfig */,
+				49E34C0ACB5E0EFC497F7A97 /* Pods-CardManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F2BBDB91D95E48D00CA0C9F /* CardManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F2BBDD11D95E48D00CA0C9F /* Build configuration list for PBXNativeTarget "CardManager" */;
+			buildPhases = (
+				2095704F045173CA3A010481 /* [CP] Check Pods Manifest.lock */,
+				2F2BBDB61D95E48D00CA0C9F /* Sources */,
+				2F2BBDB71D95E48D00CA0C9F /* Frameworks */,
+				2F2BBDB81D95E48D00CA0C9F /* Resources */,
+				4B6C52FE033A46BAC3910B0D /* [CP] Embed Pods Frameworks */,
+				57F0225771697439B502D884 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardManager;
+			productName = CardManager;
+			productReference = 2F2BBDBA1D95E48D00CA0C9F /* CardManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F2BBDB21D95E48D00CA0C9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IC;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Itaú Card";
+				TargetAttributes = {
+					2F2BBDB91D95E48D00CA0C9F = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UNBA7S3W5P;
+					};
+				};
+			};
+			buildConfigurationList = 2F2BBDB51D95E48D00CA0C9F /* Build configuration list for PBXProject "CardManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F2BBDB11D95E48D00CA0C9F;
+			productRefGroup = 2F2BBDBB1D95E48D00CA0C9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F2BBDB91D95E48D00CA0C9F /* CardManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F2BBDB81D95E48D00CA0C9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2BBDCD1D95E48D00CA0C9F /* LaunchScreen.storyboard in Resources */,
+				2F2BBDCA1D95E48D00CA0C9F /* Assets.xcassets in Resources */,
+				2F2BBDC81D95E48D00CA0C9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2095704F045173CA3A010481 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B6C52FE033A46BAC3910B0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardManager/Pods-CardManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57F0225771697439B502D884 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardManager/Pods-CardManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F2BBDB61D95E48D00CA0C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9BF4031D9D492D00748882 /* ICLoginBO.m in Sources */,
+				2F2BBDE01D95EFA000CA0C9F /* ICLoginViewController.m in Sources */,
+				2F2BBDEF1D96CF4100CA0C9F /* ICTestNetworkConnectionProvider.m in Sources */,
+				2F2BBDE31D95F93700CA0C9F /* ICRegisterViewController.m in Sources */,
+				2F9BF3FF1D9C3F7800748882 /* ICHTTPCardManagerAPIProvider+User.m in Sources */,
+				2F2BBDC21D95E48D00CA0C9F /* AppDelegate.m in Sources */,
+				2F2BBDE91D9605CD00CA0C9F /* UITextFieldLimit.m in Sources */,
+				2F9BF4111D9EF24D00748882 /* UIColor+CardManagerDefaults.m in Sources */,
+				2F9BF3F21D9C384600748882 /* ICHTTPCardManagerAPIProvider.m in Sources */,
+				2F9BF4081D9D88E400748882 /* ICBaseManager.m in Sources */,
+				2F9BF40B1D9D89CC00748882 /* ICLoginManager.m in Sources */,
+				2F2BBDBF1D95E48D00CA0C9F /* main.m in Sources */,
+				2F9BF3EF1D99A57200748882 /* ICUser.m in Sources */,
+				2F2BBDEC1D96CAFF00CA0C9F /* ICValidateStringBO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F2BBDC61D95E48D00CA0C9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F2BBDC71D95E48D00CA0C9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F2BBDCB1D95E48D00CA0C9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F2BBDCC1D95E48D00CA0C9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F2BBDCF1D95E48D00CA0C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F2BBDD01D95E48D00CA0C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F2BBDD21D95E48D00CA0C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE5B9EC73AE41D8B8AE2A9F /* Pods-CardManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CardManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = teste.CardManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		2F2BBDD31D95E48D00CA0C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E34C0ACB5E0EFC497F7A97 /* Pods-CardManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CardManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = teste.CardManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F2BBDB51D95E48D00CA0C9F /* Build configuration list for PBXProject "CardManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2BBDCF1D95E48D00CA0C9F /* Debug */,
+				2F2BBDD01D95E48D00CA0C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F2BBDD11D95E48D00CA0C9F /* Build configuration list for PBXNativeTarget "CardManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2BBDD21D95E48D00CA0C9F /* Debug */,
+				2F2BBDD31D95E48D00CA0C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F2BBDB21D95E48D00CA0C9F /* Project object */;
+}
